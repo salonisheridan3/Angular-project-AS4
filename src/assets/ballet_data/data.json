@@ -1,0 +1,69 @@
+{
+    "dancers":[
+        {
+            "id": "jurgita_dronina",
+            "name": "Jurgita Dronina",
+            "born": "Saratov, Russia",
+            "yearJoined": 2015,
+            "position": "Principal Dancer",
+            "photo": "jurgita_dronina.png"
+        },
+        {
+            "id": "naoya_ebe",
+            "name": "Naoya Ebe",
+            "born": "Tokyo, Japan",
+            "yearJoined": 2007,
+            "position": "Principal Dancer",
+            "photo": "naoya_ebe.png"
+        },
+        {
+            "id": "shaakir_muhammad",
+            "name": "Shaakir Muhammad",
+            "born": "Brooklyn, New York",
+            "yearJoined": 2024,
+            "position": "First Soloist",
+            "photo": "shaakir_muhammad.png"
+        },
+        {
+            "id": "calley_skalnik",
+            "name": "Calley Skalnik",
+            "born": "Tulsa, Oklahoma",
+            "yearJoined": 2014,
+            "position": "First Soloist",
+            "photo": "calley_skalnik.png"
+        },
+        {
+            "id": "larkin_miller",
+            "name": "Larkin Miller",
+            "born": "Los Angeles, California",
+            "yearJoined": 2016,
+            "position": "Second Soloist",
+            "photo": "larkin_miller.png"
+        },
+        {
+            "id": "miyoko_koyasu",
+            "name": "Miyoko Koyasu",
+            "born": "Chiba, Japan",
+            "yearJoined": 2011,
+            "position": "Second Soloist",
+            "photo": "miyoko_koyasu.png"
+        },
+        {
+            "id": "alexander_skinner",
+            "name": "Alexander Skinner",
+            "born": "Ottawa, Ontario",
+            "yearJoined": 2017,
+            "position": "Corps de Ballet",
+            "photo": "alexander_skinner.png"
+        },
+        {
+            "id": "keira_sanford",
+            "name": "Keira Sanford",
+            "born": "Halifax, Nova Scotia",
+            "yearJoined": 2022,
+            "position": "Corps de Ballet",
+            "photo": "keira_sanford.png"
+        }
+
+    ]
+}

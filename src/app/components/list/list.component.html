@@ -1,0 +1,26 @@
+<div *ngIf="loading" style="padding:20px">Loading data…</div>
+<div *ngIf="error" style="padding:20px;color:#a00">{{ error }}</div>
+
+<table *ngIf="!loading && items.length" class="list-table" role="table">
+  <thead>
+    <tr>
+      <th>Photo</th>
+      <th>Name</th>
+      <th>Position</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of items">
+      <td style="width:120px;">
+        <img *ngIf="item.photo" [src]="'assets/ballet_data/images/' + item.photo" [alt]="item.name" width="80" />
+        <div *ngIf="!item.photo" style="width:80px;height:56px;background:#f0f0f0;border-radius:6px;display:flex;align-items:center;justify-content:center;color:#999">No Photo</div>
+      </td>
+      <td>{{ item.name }}</td>
+      <td>{{ item.position }}</td>
+      <td><button (click)="goToDetails(item)">View</button></td>
+    </tr>
+  </tbody>
+</table>
+
+<div *ngIf="!loading && !items.length" style="padding:20px">No items available.</div>

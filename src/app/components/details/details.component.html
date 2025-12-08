@@ -1,0 +1,14 @@
+<div *ngIf="loading">Loading details…</div>
+<div *ngIf="!loading && !item">Item not found.</div>
+
+<div *ngIf="item" class="details">
+  <h2>{{ item.name }}</h2>
+  <img *ngIf="item.photo" [src]="'assets/ballet_data/images/' + item.photo" [alt]="item.name" />
+  <p><strong>Born:</strong> {{ item.born }}</p>
+  <p><strong>Year Joined:</strong> {{ item.yearJoined }}</p>
+  <p><strong>Position:</strong> {{ item.position }}</p>
+  <p>{{ item.description }}</p>
+  <div style="margin-top:12px;">
+    <button (click)="back()">Back to list</button>
+  </div>
+</div>

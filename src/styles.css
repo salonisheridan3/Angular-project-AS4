@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --accent: #0d6efd;
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --muted: #6c757d;
+}
+* { box-sizing: border-box; }
+html, body, app-root { height: 100%; margin: 0; font-family: "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg); color: #222; }
+
+.site-header {
+  background: linear-gradient(90deg, #0b5ed7, #0d6efd);
+  color: white;
+  padding: 16px;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+}
+.site-header h1 { margin: 0; font-size: 18px; }
+.site-header nav a { color: rgba(255,255,255,0.95); text-decoration: none; margin-left: 12px; }
+
+.container {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 16px;
+}
+
+.site-footer {
+  background: #fff;
+  border-top: 1px solid #eee;
+  padding: 12px 16px;
+  text-align: center;
+  color: var(--muted);
+}
+
+.list-table { width: 100%; border-collapse: collapse; background: var(--card); box-shadow: 0 6px 18px rgba(0,0,0,0.04); border-radius: 6px; overflow: hidden; }
+.list-table th, .list-table td { padding: 12px 14px; text-align: left; vertical-align: middle; border-bottom: 1px solid #f0f0f0; }
+.list-table th { background: #fafafa; color: #333; font-weight: 600; }
+.list-table img { border-radius: 6px; display:block; }
+
+.details { background: var(--card); padding: 18px; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.04); }
+.details img { max-width: 100%; border-radius: 8px; margin: 12px 0; }
+
+@media (max-width: 720px) {
+  .list-table td img { width: 64px; }
+  .site-header { padding: 12px; }
+}
